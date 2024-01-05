@@ -1,0 +1,148 @@
+#app {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+#app .container {
+  z-index: 100;
+  width: 376px;
+  height: 666px;
+  background: white;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+}
+
+#app .container-view {
+  height: 527px;
+  overflow: auto;
+}
+
+#app #call_list {
+}
+#app #call_list a, #app #archives a{
+  text-decoration: none;
+}
+#app .archiveAll{
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  text-align: center;
+  transition: all .5s ease;
+}
+#app .archiveAll:hover{
+  color: rgb(42, 196, 32);
+}
+
+#app .call_list_item {
+  display: flex;
+  margin: 8px 0;
+  color: #232323;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-style: normal;
+  align-items: center;
+  flex-direction: row;
+  transition: all 500ms ease;
+  justify-content: flex-start;
+}
+#app .call_list_item:hover {
+  background: #f1f1f1;
+}
+#app .call_list_item a .pp {
+  margin-bottom: auto;
+  margin-right: 8px;
+}
+#app .call_list_item .pp .material-icons-outlined {
+  font-size: 40px;
+}
+#app .call_list_item .info {
+  display: flex;
+  margin-left: 8px;
+  flex-direction: column;
+}
+#app .call_list_item .info .name {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+#app .call_list_item .info .direction {
+  display: flex;
+  color: #232323;
+  font-size: 12px;
+  align-items: center;
+  margin: 4px 0 6px 2px;
+}
+#app .call_list_item .info .direction .material-icons{
+  font-size: 12px;
+  margin-right: 8px;
+}
+#app .call_list_item .info .via {
+  color: rgb(42, 196, 32);
+  font-size: 10px;
+}
+#app .call_list_item .call {
+  color: #232323;
+  font-size: 24px;
+  margin-left: 24px;
+}
+#app .call_list_item .archive {
+  color: #232323;
+  font-size: 24px;
+  margin-left: auto;
+}
+
+#app #callDetails a {
+  text-decoration: none;
+}
+#app #callDetails .info {
+  display: flex;
+  color: #232323;
+  padding: 8px 20px;
+  font-style: normal;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f1f1f1;
+  transition: all 500ms ease;
+  justify-content: flex-start;
+}
+#app #callDetails .info .pp {
+  margin-right: 8px;
+}
+#app #callDetails .info .name {
+  font-size: 16px;
+}
+#app #callDetails .calls {}
+#app #callDetails .calls .call_list_item {
+  margin: 0;
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid #cccccc;
+}
+#app #callDetails .calls .call_list_item .call_direction{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#app #callDetails .calls .call_list_item .call_direction p{
+  margin: 0;
+  padding: 2px;
+  font-size: 12px;
+}
+#app #callDetails .calls .call_list_item .call_duration{
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#app #callDetails .calls .call_list_item .call_duration p{
+  margin: 0;
+  padding: 2px;
+  font-size: 12px;
+}

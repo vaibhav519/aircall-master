@@ -1,0 +1,21 @@
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    padding: 16px 0;
+    position: absolute;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #232323;
+}
+footer a.selected {
+    color: rgb(42, 196, 32);
+}
